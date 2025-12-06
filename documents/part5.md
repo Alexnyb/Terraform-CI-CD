@@ -735,10 +735,11 @@ In that case, import it first:
 ```bash
 # Get your AWS Account ID
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+
 echo "Your AWS Account ID is: $AWS_ACCOUNT_ID"
 
 # Only run this if the provider already exists:
-# terraform import aws_iam_openid_connect_provider.github arn:aws:iam::${AWS_ACCOUNT_ID}:oidc-provider/token.actions.githubusercontent.com
+ terraform import aws_iam_openid_connect_provider.github arn:aws:iam::${AWS_ACCOUNT_ID}:oidc-provider/token.actions.githubusercontent.com
 ```
 
 **Windows (PowerShell):**
