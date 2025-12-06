@@ -1053,6 +1053,9 @@ jobs:
 ```
 
 ### Step 4: Commit and Push All Changes
+Need to go to Twin folder
+cd ..
+
 
 ```bash
 # Add all changes (workflows, backend.tf, updated scripts)
